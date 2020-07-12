@@ -16,20 +16,6 @@ use Throwable;
 class Kernel extends HttpKernel
 {
 
-    public function __construct(
-        EventDispatcherInterface $dispatcher,
-        ControllerResolverInterface $resolver,
-        RequestStack $requestStack = null,
-        ArgumentResolverInterface $argumentResolver = null
-    ) {
-        parent::__construct(
-            $dispatcher,
-            $resolver,
-            $requestStack,
-            $argumentResolver
-        );
-    }
-
     public function handle(
         Request $request,
         int $type = HttpKernelInterface::MASTER_REQUEST,

@@ -1,3 +1,15 @@
+**Простое REST API на компонентах symfony**
+==========================================
+
+## Используемые компоненты
+  * symfony/http-kernel
+  * symfony/http-foundation 
+  * symfony/dependency-injection
+  * symfony/routing
+  * doctrine/orm
+  * doctrine/annotations
+  * guzzlehttp/guzzle
+
 ## Конфигурация: 
 - PHP 7.3
 - nginx
@@ -9,11 +21,3 @@
 ## Генерация схемы БД
 vendor/bin/doctrine orm:schema-tool:create
 
-## Используемые компоненты
-  * doctrine/orm
-  * doctrine/annotations
-  * symfony/routing
-  * symfony/http-foundation
-  * symfony/dependency-injection
-  * symfony/http-kernel
-  * guzzlehttp/guzzle
